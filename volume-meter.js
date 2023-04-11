@@ -7,7 +7,7 @@ const audioContext = new AudioContext();
 const analyser = audioContext.createAnalyser();
 
 // Connect the audio source
-const audioElement = new Audio("/assets/yodel.mp3");
+const audioElement = new Audio("./yodel.mp3");
 const source = audioContext.createMediaElementSource(audioElement);
 source.connect(analyser);
 analyser.connect(audioContext.destination);
